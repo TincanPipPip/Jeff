@@ -1,0 +1,34 @@
+/**
+ * ----------------------
+ * Un.titled
+ * Config - Vars
+ * ----------------------
+ */
+
+// This breaks Shopify compiler
+//:root {
+//   --c-primary: #222222;
+//   --c-secondary: #ffb7a3;
+//   --c-white: #ffffff;
+
+//   --fontBody: 'Helvetica', sans-serif;
+//   --fontTitle: 'Helvetica', sans-serif;
+//   --fontSize: 18px;
+//   --lineHeight: 1.5;
+//   --bump: 30px;
+
+//   --containerWidth: 100rem;
+
+//   --easing: cubic-bezier(0.83, 0, 0.17, 1);
+// }
+
+/**
+ * Breakpoints
+ */
+$breakpoints: (
+  xs: 576px,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px,
+  xlg: 1600px,
+);

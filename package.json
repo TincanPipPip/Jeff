@@ -1,0 +1,27 @@
+{
+  "name": "shopify-template",
+  "version": "1.0.0",
+  "description": "Shopify Template with built in npm asset compiler",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "dev"
+  },
+  "keywords": [
+    "shopify",
+    "mvp"
+  ],
+  "author": "Angelou Jeffers",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.1.0",
+    "include-media": "^1.4.9",
+    "modularscale-sass": "^3.0.10",
+    "normalize-scss": "^7.0.1",
+    "replace": "^1.2.0",
+    "sass": "^1.26.11"
+  }
+}
