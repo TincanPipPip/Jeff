@@ -6,7 +6,7 @@
 
     theme new --password=[your-password] --store=[your-store.myshopify.com] --name=[theme name]
 
-    This will link the your shopify template to a shopify account, creating a config.yml file.
+    This will link your shopify template to a shopify account, creating a config.yml file.
 
     Your configuration will be setup per environment. Here is an example config file for you to understand the usage of environments and config
 
@@ -33,23 +33,31 @@
 
     ignore_files: - config/settings_data.json
 
-    **\*** (if working on an existing site)
+-- if working on an existing site
+
     Download theme file from the shopify admin area
+
     url: /admin/themes -> actions -> download theme file
+
     extract all files and directories from the theme file download
-    copy downloaded directories into your theme - merging/overwriting any conflicting files or directories
+
+    copy downloaded files and directories into your theme - merging/overwriting any conflicting files or directories
 
 -- Run npm install in the root of your template
 
--- add these tags to you theme.liquid file
-directory location: root/layout/theme.liquid
+-- if this is a new build
+
+    add these tags to your theme.liquid file
+
+    directory location: root/layout/theme.liquid
 
     {{ 'styles.scss.css' | asset_url | stylesheet_tag }}
     {{ 'application.scss.css' | asset_url | stylesheet_tag }}
     {{ 'application.js' | asset_url | script_tag }}
 
 -- Run theme deploy --env=development --allow-live
-to deploy your new directory and file structure to the live theme on your chosen dev site
+
+    to deploy your new directory and file structure to the live theme on your chosen dev site
 
 -- To begin development
 
